@@ -4,8 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+
+    <div class="heading">
+        <div class="logo-heading">
+            <img src="./assets/logo.jpg" alt="" class="logo-img">
+        </div>
+        <div class="date"></div>
+        <div class="profile">
+            <div class="profile-name">
+                <h1>ananggi</h1>
+                <p>anggota</p>
+            </div>
+            <img src="./assets/user-photo.png" alt="" class="profile-img">
+        </div>
+      </div>
+
+
+ <div class="conteiner">
+    <div class="addTask">
+        <select id="priority" placeholder="priority">
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+        </select>
+        <input type="date" id="dueDate">
+        <input type="text" placeholder="add a task" id="input">
+        <button>add</button>
+        
+    </div>
+    <h3>not complated</h3>
+    <ol class="notComplated">
+        <!-- <li>
+            <p class="to-do">task</p>
+            <h2>high</h2>
+            <h2>2024-8-23</h2>
+            <button><img src="./assets/check-icon.png"></button>
+            <button><img src="./assets/uncheck-icon.jpg" alt=""></button>
+        </li> -->
+    </ol>
+    <h3>complated</h3>
+    <ol class="Complated">
+        <!-- <li>task
+            <button><img src="./assets/uncheck-icon.jpg" alt=""></button>
+        </li> -->
+    </ol>
+
+    <div id="delete-all">
+        <button>DELETE ALL</button>
+    </div>
+
+ </div>
+    <script src="./js.js"></script>
 </body>
 </html>

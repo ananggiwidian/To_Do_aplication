@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    height: 100vh;
+    background-color: #03dfff;
+    background: linear-gradient(138deg,#03ddffcb 0%,#ff0381b6 90%);
+}
+/* heading */
+
+
+.heading {
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    justify-content: space-between;
+
+}
+
+.logo-heading {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    width: 33%;
+}
+
+.profile {
+    width: 33%;
+    display: flex;
+    gap: 20px;
+    justify-content: right;
+}
+
+.profile-name {
+    font-size: small
+}
+
+/* input */
+.conteiner {
+    position: relative;
+    max-width: 800px;
+    padding: 10px;
+    margin: auto;
+}
+
+.addTask {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    gap: 10px;
+    align-content: center;
+}
+
+.addTask > input[type="text"]{
+    width: 90%;
+    color: #333;
+    border: none;
+    border-bottom: 2px solid #666;
+    background: none;
+    font-size: 22px;
+    outline: none;
+}
+
+#priority, #dueDate {
+    width: 90%;
+    color: #333;
+    border: none;
+    border-bottom: 2px solid #666;
+    background: none;
+    font-size: 22px;
+    outline: none;
+}
+
+.addTask button{
+    margin: 0 10px;
+    background: #222;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* task area */
+
+.notComplated, .Complated {
+    margin: 5px;
+    border-bottom: 2px solid #666;
+}
+
+h3 {
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    padding-top: 20px;
+}
+
+ol{
+    list-style: none;
+}
+
+ol li {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background: #e96969bb;
+    font-size: 1rem;
+    display:inline-flex;
+    justify-content: left;
+}
+
+.to-do {
+    width: 43%;
+    justify-content: left;
+}
+
+h2 {
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #03dfff;
+    margin: 0 3px;
+    align-items: center;
+    width: fit-content;
+    font-size: 0.6rem;
+}
+
+ol li button{
+    border: 0;
+    background: #231381;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    line-height: 2rem;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+ol li button img{
+    width: 1.5rem;
+}
+
+ol.Complated li {
+    background: #00ff62;
+}
+
+/* delete all */
+
+#delete-all {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    gap: 10px;
+    align-content: center;
+}
+
+#delete-all button {
+    margin: 0 10px;
+    background: #222;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
