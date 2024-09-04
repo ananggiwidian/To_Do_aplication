@@ -65,6 +65,8 @@ function addList(e){
         parent.remove();
         Complated.appendChild(parent);
         checkBtn.style.display = 'none'
+        toDo.style.textDecoration = 'line-through'
+
     });
 
     delBtn.addEventListener('click', function(){
@@ -78,16 +80,7 @@ const deleteAll= document.querySelector('#delete-all');
 deleteAll.addEventListener('click', function(){
     const notComplated = document.querySelector('.notComplated > li');
     const Complated = document.querySelector('.Complated > li');
-    if (notComplated === ''){
-        return false;
-    } else{
-        notComplated.remove();
-    };
-
-    if (Complated === ''){
-        return false;
-    } else {
-        Complated.remove();
-    };
+    notComplated.remove();
+    Complated.remove();
 })
 
